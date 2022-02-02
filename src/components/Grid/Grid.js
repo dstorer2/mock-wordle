@@ -1,5 +1,5 @@
 import react from "react";
-import Row from "./Row";
+import Row from "../Row/Row";
 import "./Grid.css";
 
 const Grid = props => {

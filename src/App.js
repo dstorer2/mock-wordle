@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Container from './components/Container';
+import Container from './components/Container/Container';
 
 function App() {
   return (

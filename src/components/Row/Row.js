@@ -1,5 +1,5 @@
 import react from "react";
-import Cell from "./Cell";
+import Cell from "../Cell/Cell";
 import "./Row.css";
 
 const Row = props => {
