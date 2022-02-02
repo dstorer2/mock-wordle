@@ -1,0 +1,12 @@
+.Cell{
+    border: 2px solid whitesmoke;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+}
