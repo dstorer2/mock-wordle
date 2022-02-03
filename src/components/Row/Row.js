@@ -1,17 +1,25 @@
-import react from "react";
+import { useEffect, useState } from "react";
 import Cell from "../Cell/Cell";
-import "./Row.css";
 
 const Row = props => {
-    return(
-        <div className="Row">
-            <Cell/>
-            <Cell/>
-            <Cell/>
-            <Cell/>
-            <Cell/>
-        </div>
-    )
+    const [loaded, setLoaded] = useState(false)
+    const cells = useEffect(() => {
+        props.cellData.map(cell => {
+            <Cell value={cell} />
+        })
+        setLoaded(true);
+    }, []);
+    if(loaded){
+        return(
+            <div>{cells}</div>
+        )
+    }else{
+        return(
+            <div>
+                loading...
+            </div>
+        )
+    }
 }
 
 export default Row;
